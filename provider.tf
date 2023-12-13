@@ -71,7 +71,3 @@ provider "helm" {
         )
     }
 }
-
-provider "random" {
-  
-}
