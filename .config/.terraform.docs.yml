@@ -1,0 +1,30 @@
+formatter: markdown table
+
+header-from: ./.config/header.md #optional
+footer-from: ./.config/footer.md #optional 
+
+sections:
+  show:
+    - header
+    - requirements    
+    - providers
+    - modules
+    - inputs    
+    - outputs
+    - footer
+
+sort:
+  enabled: true
+  by: required
+
+settings:
+  anchor: true
+  indent: 4
+  escape: false
+  default: true
+  required: true
+  type: true
+  hide-empty: true
+  output-values: true
+  output-default: true
+  append-type: true
