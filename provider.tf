@@ -35,6 +35,8 @@ terraform {
 
 # Initialise the Linode provider
 provider "linode" {
+    alias = "default"
+    
     token = var.linode_config.api_token
 }
 
