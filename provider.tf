@@ -20,9 +20,9 @@ terraform {
             #configuration_aliases = [ kubernetes.default ]
         }
         kubectl = {
-          source = "gavinbunney/kubectl"
-          version = ">= 1.14.0"
-          configuration_aliases = [ kubectl.default ]
+            source = "gavinbunney/kubectl"
+            version = ">= 1.14.0"
+            #configuration_aliases = [ kubectl.default ]
         }
         random = {
             source = "hashicorp/random"
