@@ -61,7 +61,7 @@ spec:
 YAML
 }
   
-# Create the _STAGING_ ClusterIssuer for Let's Encrypt
+# Create the _PRODUCTION_ ClusterIssuer for Let's Encrypt
 resource "kubectl_manifest" "cluster_issuer_production" {
   depends_on = [ helm_release.cert_manager, helm_release.ingress-nginx]
 

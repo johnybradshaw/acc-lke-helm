@@ -60,7 +60,7 @@ resource "helm_release" "wordpress" {
     # Use Letsencrypt
     set {
       name = "ingress.annotations.cert-manager\\.io/cluster-issuer"
-      value = "letsencrypt-staging"
+      value = "${var.production ? "letsencrypt-production" : "letsencrypt-staging"}"
     }
     # Create a MariaDB database
     set {
