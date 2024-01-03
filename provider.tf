@@ -7,17 +7,17 @@ terraform {
         linode = {
             source = "linode/linode"
             version = ">= 2.9.3"
-            configuration_aliases = [ linode.default ]
+            #configuration_aliases = [ linode.default ]
         }
         helm = {
             source = "hashicorp/helm"
             version = ">= 2.11.0"
-            configuration_aliases = [ helm.default ]
+            #configuration_aliases = [ helm.default ]
         }
         kubernetes = {
             source = "hashicorp/kubernetes"
             version = ">= 2.23.0"
-            configuration_aliases = [ kubernetes.default ]
+            #configuration_aliases = [ kubernetes.default ]
         }
         kubectl = {
           source = "gavinbunney/kubectl"
@@ -27,7 +27,7 @@ terraform {
         random = {
             source = "hashicorp/random"
             version = ">= 2.3.0"
-            configuration_aliases = [ random.default ]
+            #configuration_aliases = [ random.default ]
         }
     }
 }
@@ -55,6 +55,7 @@ locals {
 
 # Initialise the Kubernetes provider
 provider "kubernetes" {
+    alias = "default"
 
     host  = local.kube_config_map.clusters[0].cluster.server
     token = local.user_token
@@ -66,7 +67,8 @@ provider "kubernetes" {
 
 # Initialise the Helm provider
 provider "helm" {
-    
+    alias = "default"
+
     kubernetes {
         host  = local.kube_config_map.clusters[0].cluster.server
         token = local.user_token
@@ -79,6 +81,8 @@ provider "helm" {
 
 # Initialise kubectl
 provider "kubectl" {
+    alias = "default"
+
     host  = local.kube_config_map.clusters[0].cluster.server
     token = local.user_token
 
