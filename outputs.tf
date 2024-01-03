@@ -1,4 +1,4 @@
-output "wordpress" {
+output "wordpressURL" {
     value = "http${var.dns.ddns_secure ? "s" : ""}://${data.linode_profile.me.username}.${var.dns.ddns}"
     description = "Wordpress URL"
 }
