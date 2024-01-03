@@ -22,8 +22,6 @@ resource "helm_release" "cert_manager" {
     value = "true"
   }
 
-  # Add the user email address to the cert-manager Helm chart
-
 }
 
 # Create a secret containing the Linode API token

@@ -76,3 +76,13 @@ provider "helm" {
         )
     }
 }
+
+# Initialise kubectl
+provider "kubectl" {
+    host  = local.kube_config_map.clusters[0].cluster.server
+    token = local.user_token
+
+    cluster_ca_certificate = base64decode(
+        local.kube_config_map.clusters[0].cluster["certificate-authority-data"]
+    )
+}
