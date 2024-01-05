@@ -4,6 +4,8 @@ data "linode_profile" "me" {}
 
 # Create a namespace for wordpress
 resource "kubernetes_namespace" "wordpress" {
+    depends_on = [ data.linode_lke_cluster.lke_cluster ]
+    
     metadata {
         name = "wordpress"
     }
@@ -18,7 +20,10 @@ resource "random_password" "wordpressPassword" {
 
 # Create a Wordpress Helm release
 resource "helm_release" "wordpress" {
-    depends_on = [ helm_release.ingress-nginx, kubernetes_namespace.wordpress ]
+    depends_on = [ helm_release.ingress-nginx, 
+        helm_release.metrics-server,
+        helm_release.cert_manager,
+        kubernetes_namespace.wordpress ] # Deploy Metrics-Server & Cert-Manager first
 
     name = "wordpress"
     repository = "https://charts.bitnami.com/bitnami"

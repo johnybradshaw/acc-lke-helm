@@ -2,6 +2,8 @@
 
 # Create the cert-manager namespace
 resource "kubernetes_namespace" "cert_manager" {
+  depends_on = [ data.linode_lke_cluster.lke_cluster ]
+
   metadata {
     name = "cert-manager"
   }
@@ -9,6 +11,8 @@ resource "kubernetes_namespace" "cert_manager" {
 
 # Deploy cert-manager via Helm
 resource "helm_release" "cert_manager" {
+  depends_on = [ kubernetes_namespace.cert_manager ]
+
   name       = "cert-manager"
   repository = "https://charts.jetstack.io"
   chart      = "cert-manager"
@@ -26,7 +30,7 @@ resource "helm_release" "cert_manager" {
 
 # Create a secret containing the Linode API token
 resource "kubernetes_secret" "letsencrypt_linode_api_token_secret" {
-    depends_on = [ kubernetes_namespace.cert_manager, helm_release.ingress-nginx ]
+    depends_on = [ kubernetes_namespace.cert_manager ]
   metadata {
     name      = "letsencrypt-linode-api-token-secret"
     namespace = kubernetes_namespace.cert_manager.metadata.0.name
@@ -39,7 +43,7 @@ resource "kubernetes_secret" "letsencrypt_linode_api_token_secret" {
 
 # Create the _STAGING_ ClusterIssuer for Let's Encrypt
 resource "kubectl_manifest" "cluster_issuer_staging" {
-  depends_on = [ helm_release.cert_manager, helm_release.ingress-nginx ]
+  depends_on = [ helm_release.cert_manager ]
 
   yaml_body = <<YAML
 apiVersion: cert-manager.io/v1
@@ -61,7 +65,7 @@ YAML
   
 # Create the _PRODUCTION_ ClusterIssuer for Let's Encrypt
 resource "kubectl_manifest" "cluster_issuer_production" {
-  depends_on = [ helm_release.cert_manager, helm_release.ingress-nginx]
+  depends_on = [ helm_release.cert_manager ]
 
   yaml_body = <<YAML
 apiVersion: cert-manager.io/v1

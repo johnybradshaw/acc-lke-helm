@@ -20,8 +20,10 @@ terraform {
             #configuration_aliases = [ kubernetes.default ]
         }
         kubectl = {
-            source = "gavinbunney/kubectl"
-            version = ">= 1.14.0"
+            # source = "gavinbunney/kubectl"
+            # version = ">= 1.14.0"
+            source  = "alekc/kubectl"
+            version = ">= 2.0.2"
             #configuration_aliases = [ kubectl.default ]
         }
         random = {
@@ -95,3 +97,4 @@ provider "kubectl" {
     load_config_file = false # Disables local loading of the KUBECONFIG
     apply_retry_count = 15 # Allows kubernetes commands to be retried
 }
+

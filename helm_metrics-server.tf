@@ -2,6 +2,8 @@
 
 # Create a namespace for metrics-server
 resource "kubernetes_namespace" "metrics-server" {
+  depends_on = [ data.linode_lke_cluster.lke_cluster ]
+
   metadata {
     name = "metrics-server"
   }
@@ -9,6 +11,8 @@ resource "kubernetes_namespace" "metrics-server" {
 
 # Deploy metrics-server
 resource "helm_release" "metrics-server" {
+  depends_on = [ kubernetes_namespace.metrics-server ]
+
   name       = "metrics-server"
   repository = "https://kubernetes-sigs.github.io/metrics-server/"
   chart      = "metrics-server"
