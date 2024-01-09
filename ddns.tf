@@ -5,7 +5,7 @@ locals {
     # Uppercase the first letter for the blog name
     blogname = "${upper(substr(var.subdomain, 0, 1))}${lower(substr(var.subdomain, 1, length(var.subdomain)))}"
     # Hashed data to sign the DDNS request
-    combined_data = "${var.subdomain}-${data.kubernetes_service.nginx.status.0.load_balancer.0.ingress.0.ip}"
+    combined_data = "${local.subdomain}-${data.kubernetes_service.nginx.status.0.load_balancer.0.ingress.0.ip}"
     hashed_data   = sha256("${local.combined_data}-${var.linode_config.secret_key}")
 }
 
