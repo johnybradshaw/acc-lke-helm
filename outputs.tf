@@ -1,9 +1,9 @@
 output "wordpressURL" {
-    value = "http${var.dns.ddns_secure ? "s" : ""}://${data.linode_profile.me.username}.${var.dns.ddns}"
+    value = "http${var.dns.ddns_secure ? "s" : ""}://${local.subdomain}.${var.dns.ddns}"
     description = "Wordpress URL"
 }
 output "wordpressAdmin" {
-    value = "http${var.dns.ddns_secure ? "s" : ""}://${data.linode_profile.me.username}.${var.dns.ddns}/wp-login.php"
+    value = "http${var.dns.ddns_secure ? "s" : ""}://${local.subdomain}.${var.dns.ddns}/wp-login.php"
     description = "Wordpress Admin URL"
 }
 output "wordpressUsername" {

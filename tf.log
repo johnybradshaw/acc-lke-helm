@@ -1,0 +1,461 @@
+2024-01-05T01:27:51.776Z [INFO]  Terraform version: 1.5.7
+2024-01-05T01:27:51.777Z [DEBUG] using github.com/hashicorp/go-tfe v1.26.0
+2024-01-05T01:27:51.777Z [DEBUG] using github.com/hashicorp/hcl/v2 v2.16.2
+2024-01-05T01:27:51.777Z [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.0
+2024-01-05T01:27:51.777Z [DEBUG] using github.com/zclconf/go-cty v1.12.2
+2024-01-05T01:27:51.777Z [INFO]  Go runtime version: go1.21.1
+2024-01-05T01:27:51.777Z [INFO]  CLI args: []string{"terraform", "init"}
+2024-01-05T01:27:51.777Z [DEBUG] Attempting to open CLI config file: /Users/jobradsh/.terraformrc
+2024-01-05T01:27:51.777Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-01-05T01:27:51.778Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-01-05T01:27:51.778Z [DEBUG] ignoring non-existing provider search directory /Users/jobradsh/.terraform.d/plugins
+2024-01-05T01:27:51.778Z [DEBUG] ignoring non-existing provider search directory /Users/jobradsh/Library/Application Support/io.terraform/plugins
+2024-01-05T01:27:51.779Z [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2024-01-05T01:27:51.780Z [INFO]  CLI command args: []string{"init"}
+2024-01-05T01:27:51.788Z [DEBUG] New state was assigned lineage "867fa59c-c02d-cd8a-3324-d308b13622b2"
+2024-01-05T01:27:52.072Z [DEBUG] checking for provisioner in "."
+2024-01-05T01:27:52.098Z [DEBUG] checking for provisioner in "/opt/homebrew/bin"
+2024-01-05T01:27:52.102Z [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2024-01-05T01:27:52.314Z [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/kubernetes/versions
+2024-01-05T01:27:52.394Z [DEBUG] GET https://registry.terraform.io/v1/providers/alekc/kubectl/versions
+2024-01-05T01:27:52.558Z [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/random/versions
+2024-01-05T01:27:52.637Z [DEBUG] GET https://registry.terraform.io/v1/providers/linode/linode/versions
+2024-01-05T01:27:52.794Z [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/helm/versions
+2024-01-05T01:27:52.876Z [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/http/versions
+2024-01-05T01:28:05.080Z [INFO]  Terraform version: 1.5.7
+2024-01-05T01:28:05.081Z [DEBUG] using github.com/hashicorp/go-tfe v1.26.0
+2024-01-05T01:28:05.081Z [DEBUG] using github.com/hashicorp/hcl/v2 v2.16.2
+2024-01-05T01:28:05.081Z [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.0
+2024-01-05T01:28:05.081Z [DEBUG] using github.com/zclconf/go-cty v1.12.2
+2024-01-05T01:28:05.081Z [INFO]  Go runtime version: go1.21.1
+2024-01-05T01:28:05.081Z [INFO]  CLI args: []string{"terraform", "apply", "-auto-approve"}
+2024-01-05T01:28:05.081Z [DEBUG] Attempting to open CLI config file: /Users/jobradsh/.terraformrc
+2024-01-05T01:28:05.081Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-01-05T01:28:05.081Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-01-05T01:28:05.081Z [DEBUG] ignoring non-existing provider search directory /Users/jobradsh/.terraform.d/plugins
+2024-01-05T01:28:05.081Z [DEBUG] ignoring non-existing provider search directory /Users/jobradsh/Library/Application Support/io.terraform/plugins
+2024-01-05T01:28:05.081Z [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2024-01-05T01:28:05.081Z [INFO]  CLI command args: []string{"apply", "-auto-approve"}
+2024-01-05T01:28:05.088Z [DEBUG] New state was assigned lineage "7c07b6d9-6578-1b15-1caf-6da834c5d54c"
+2024-01-05T01:28:05.357Z [DEBUG] checking for provisioner in "."
+2024-01-05T01:28:05.363Z [DEBUG] checking for provisioner in "/opt/homebrew/bin"
+2024-01-05T01:28:05.366Z [INFO]  backend/local: starting Apply operation
+2024-01-05T01:28:05.372Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:05.372Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:05.382Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 args=[.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4]
+2024-01-05T01:28:05.386Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 pid=42696
+2024-01-05T01:28:05.386Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4
+2024-01-05T01:28:05.693Z [INFO]  provider.terraform-provider-kubectl_v2.0.4: configuring server automatic mTLS: timestamp=2024-01-05T01:28:05.692Z
+2024-01-05T01:28:05.702Z [DEBUG] provider.terraform-provider-kubectl_v2.0.4: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3946637533 network=unix timestamp=2024-01-05T01:28:05.702Z
+2024-01-05T01:28:05.702Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:05.713Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:05.714Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 pid=42696
+2024-01-05T01:28:05.714Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:05.714Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:05.714Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:05.718Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5]
+2024-01-05T01:28:05.720Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 pid=42697
+2024-01-05T01:28:05.720Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5
+2024-01-05T01:28:06.019Z [INFO]  provider.terraform-provider-helm_v2.12.1_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:06.019Z
+2024-01-05T01:28:06.028Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:06.029Z [DEBUG] provider.terraform-provider-helm_v2.12.1_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3003281344 network=unix timestamp=2024-01-05T01:28:06.028Z
+2024-01-05T01:28:06.039Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:06.039Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 pid=42697
+2024-01-05T01:28:06.039Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:06.041Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:06.041Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:06.046Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5]
+2024-01-05T01:28:06.048Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 pid=42700
+2024-01-05T01:28:06.048Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5
+2024-01-05T01:28:06.313Z [INFO]  provider.terraform-provider-http_v3.4.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:06.313Z
+2024-01-05T01:28:06.327Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin2851248359 network=unix timestamp=2024-01-05T01:28:06.327Z
+2024-01-05T01:28:06.327Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:06.337Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Metadata: tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server_getproviderschema.go:39 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http timestamp=2024-01-05T01:28:06.337Z
+2024-01-05T01:28:06.337Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Metadata: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server_getproviderschema.go:41 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 tf_rpc=GetProviderSchema timestamp=2024-01-05T01:28:06.337Z
+2024-01-05T01:28:06.338Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Schema: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:275 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 timestamp=2024-01-05T01:28:06.337Z
+2024-01-05T01:28:06.338Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Schema: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:277 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 timestamp=2024-01-05T01:28:06.337Z
+2024-01-05T01:28:06.338Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Resources: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:352 @module=sdk.framework timestamp=2024-01-05T01:28:06.338Z
+2024-01-05T01:28:06.338Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Resources: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:354 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 tf_rpc=GetProviderSchema timestamp=2024-01-05T01:28:06.338Z
+2024-01-05T01:28:06.338Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider DataSources: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:155 @module=sdk.framework timestamp=2024-01-05T01:28:06.338Z
+2024-01-05T01:28:06.338Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider DataSources: tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:157 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http timestamp=2024-01-05T01:28:06.338Z
+2024-01-05T01:28:06.338Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined DataSource Schema: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 @module=sdk.framework tf_data_source_type=http tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:239 timestamp=2024-01-05T01:28:06.338Z
+2024-01-05T01:28:06.338Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined DataSource Schema: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=c01d2318-74d1-2794-58af-9752ed18e9b0 tf_rpc=GetProviderSchema @module=sdk.framework tf_data_source_type=http @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:241 timestamp=2024-01-05T01:28:06.338Z
+2024-01-05T01:28:06.338Z [DEBUG] No provider meta schema returned
+2024-01-05T01:28:06.339Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:06.340Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 pid=42700
+2024-01-05T01:28:06.340Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:06.340Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:06.340Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:06.344Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5]
+2024-01-05T01:28:06.346Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 pid=42702
+2024-01-05T01:28:06.346Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5
+2024-01-05T01:28:06.669Z [INFO]  provider.terraform-provider-kubernetes_v2.24.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:06.669Z
+2024-01-05T01:28:06.679Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:06.679Z [DEBUG] provider.terraform-provider-kubernetes_v2.24.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3749930514 network=unix timestamp=2024-01-05T01:28:06.678Z
+2024-01-05T01:28:06.736Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:06.738Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 pid=42702
+2024-01-05T01:28:06.738Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:06.738Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:06.738Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:06.742Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5]
+2024-01-05T01:28:06.744Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 pid=42703
+2024-01-05T01:28:06.744Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5
+2024-01-05T01:28:07.017Z [INFO]  provider.terraform-provider-random_v3.6.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:07.016Z
+2024-01-05T01:28:07.025Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3025950809 network=unix timestamp=2024-01-05T01:28:07.025Z
+2024-01-05T01:28:07.025Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:07.034Z [DEBUG] No provider meta schema returned
+2024-01-05T01:28:07.035Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:07.036Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 pid=42703
+2024-01-05T01:28:07.036Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:07.036Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:07.036Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:07.040Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 args=[.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1]
+2024-01-05T01:28:07.043Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 pid=42705
+2024-01-05T01:28:07.043Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1
+2024-01-05T01:28:07.339Z [INFO]  provider.terraform-provider-linode_v2.10.1: configuring server automatic mTLS: timestamp=2024-01-05T01:28:07.339Z
+2024-01-05T01:28:07.347Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:07.347Z [DEBUG] provider.terraform-provider-linode_v2.10.1: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin366351084 network=unix timestamp=2024-01-05T01:28:07.347Z
+2024-01-05T01:28:07.371Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:07.372Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 pid=42705
+2024-01-05T01:28:07.372Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:07.372Z [DEBUG] Building and walking validate graph
+2024-01-05T01:28:07.373Z [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/http"], implied first by data.http.ddns
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "helm_release.ingress-nginx" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/helm"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "helm_release.wordpress" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/helm"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "data.linode_profile.me" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/linode/linode"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "random_password.wordpressPassword" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "kubernetes_namespace.metrics-server" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "kubernetes_secret.letsencrypt_linode_api_token_secret" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "helm_release.cert_manager" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/helm"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "kubernetes_namespace.wordpress" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "kubectl_manifest.cluster_issuer_staging" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/alekc/kubectl"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "kubernetes_namespace.cert_manager" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "kubectl_manifest.cluster_issuer_production" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/alekc/kubectl"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "data.http.ddns" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/http"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "data.kubernetes_service.nginx" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "helm_release.metrics-server" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/helm"]
+2024-01-05T01:28:07.373Z [DEBUG] ProviderTransformer: "data.linode_lke_cluster.lke_cluster" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/linode/linode"]
+2024-01-05T01:28:07.374Z [DEBUG] pruning unused provider["registry.terraform.io/linode/linode"].default
+2024-01-05T01:28:07.374Z [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/helm"].default
+2024-01-05T01:28:07.374Z [DEBUG] pruning unused provider["registry.terraform.io/alekc/kubectl"].default
+2024-01-05T01:28:07.374Z [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/kubernetes"].default
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "local.user_token (expand)" references: [local.kube_config_map (expand)]
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "output.wordpressAdmin (expand)" references: [var.dns data.linode_profile.me var.dns]
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "output.wordpressUsername (expand)" references: [data.linode_profile.me]
+2024-01-05T01:28:07.374Z [INFO]  ReferenceTransformer: reference not found: "path.module"
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "helm_release.wordpress" references: [helm_release.ingress-nginx helm_release.metrics-server helm_release.cert_manager kubernetes_namespace.wordpress kubernetes_namespace.wordpress data.linode_profile.me var.dns var.production data.linode_profile.me data.linode_profile.me random_password.wordpressPassword data.linode_profile.me]
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "kubernetes_secret.letsencrypt_linode_api_token_secret" references: [kubernetes_namespace.cert_manager var.linode_config kubernetes_namespace.cert_manager]
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "var.dns" references: []
+2024-01-05T01:28:07.374Z [INFO]  ReferenceTransformer: reference not found: "path.module"
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "helm_release.cert_manager" references: [kubernetes_namespace.cert_manager kubernetes_namespace.cert_manager]
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "local.kube_config_decoded (expand)" references: [data.linode_lke_cluster.lke_cluster]
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "local.user_name (expand)" references: [local.kube_config_map (expand)]
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/alekc/kubectl\"]" references: []
+2024-01-05T01:28:07.374Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "data.linode_profile.me" references: []
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "data.linode_lke_cluster.lke_cluster" references: [var.lke_cluster_id]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "var.production" references: []
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "local.hashed_data (expand)" references: [local.combined_data (expand) var.linode_config]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "local.depends_on (expand)" references: [data.linode_lke_cluster.lke_cluster]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "kubernetes_namespace.cert_manager" references: [data.linode_lke_cluster.lke_cluster]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "kubectl_manifest.cluster_issuer_production" references: [helm_release.cert_manager var.linode_config]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "data.http.ddns" references: [data.kubernetes_service.nginx data.linode_profile.me data.kubernetes_service.nginx local.hashed_data (expand) var.dns var.dns]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/linode/linode\"]" references: []
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "data.kubernetes_service.nginx" references: [helm_release.ingress-nginx helm_release.ingress-nginx helm_release.ingress-nginx]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "var.lke_cluster_id" references: []
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "output.wordpressURL (expand)" references: [var.dns data.linode_profile.me var.dns]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "random_password.wordpressPassword" references: []
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "var.linode_config" references: []
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "local.combined_data (expand)" references: [data.linode_profile.me data.kubernetes_service.nginx]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "local.kube_config_map (expand)" references: [local.kube_config_decoded (expand)]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/http\"]" references: []
+2024-01-05T01:28:07.375Z [INFO]  ReferenceTransformer: reference not found: "path.module"
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "helm_release.ingress-nginx" references: [helm_release.cert_manager]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "kubernetes_namespace.wordpress" references: [data.linode_lke_cluster.lke_cluster]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "kubectl_manifest.cluster_issuer_staging" references: [helm_release.cert_manager var.linode_config]
+2024-01-05T01:28:07.375Z [INFO]  ReferenceTransformer: reference not found: "path.module"
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "helm_release.metrics-server" references: [kubernetes_namespace.metrics-server kubernetes_namespace.metrics-server]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "output.wordpressPassword (expand)" references: [random_password.wordpressPassword]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" references: []
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "kubernetes_namespace.metrics-server" references: [data.linode_lke_cluster.lke_cluster]
+2024-01-05T01:28:07.375Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/helm\"]" references: []
+2024-01-05T01:28:07.376Z [DEBUG] Starting graph walk: walkValidate
+2024-01-05T01:28:07.377Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:07.377Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:07.381Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5]
+2024-01-05T01:28:07.383Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 pid=42711
+2024-01-05T01:28:07.383Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5
+2024-01-05T01:28:07.435Z [INFO]  provider.terraform-provider-random_v3.6.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:07.435Z
+2024-01-05T01:28:07.443Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin2764523406 network=unix timestamp=2024-01-05T01:28:07.443Z
+2024-01-05T01:28:07.443Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:07.450Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:07.450Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:07.453Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5]
+2024-01-05T01:28:07.455Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 pid=42712
+2024-01-05T01:28:07.455Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5
+2024-01-05T01:28:07.519Z [INFO]  provider.terraform-provider-http_v3.4.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:07.519Z
+2024-01-05T01:28:07.534Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:07.534Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin1088135544 network=unix timestamp=2024-01-05T01:28:07.534Z
+2024-01-05T01:28:07.542Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:07.542Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:07.544Z [DEBUG] No provider meta schema returned
+2024-01-05T01:28:07.547Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5]
+2024-01-05T01:28:07.550Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 pid=42713
+2024-01-05T01:28:07.551Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5
+2024-01-05T01:28:07.649Z [INFO]  provider.terraform-provider-kubernetes_v2.24.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:07.649Z
+2024-01-05T01:28:07.659Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:07.659Z [DEBUG] provider.terraform-provider-kubernetes_v2.24.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin1348228358 network=unix timestamp=2024-01-05T01:28:07.659Z
+2024-01-05T01:28:07.666Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:07.666Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:07.670Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 args=[.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1]
+2024-01-05T01:28:07.673Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 pid=42715
+2024-01-05T01:28:07.673Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1
+2024-01-05T01:28:07.877Z [INFO]  provider.terraform-provider-linode_v2.10.1: configuring server automatic mTLS: timestamp=2024-01-05T01:28:07.877Z
+2024-01-05T01:28:07.884Z [DEBUG] provider.terraform-provider-linode_v2.10.1: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin1041065981 network=unix timestamp=2024-01-05T01:28:07.884Z
+2024-01-05T01:28:07.884Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:07.896Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:07.896Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:07.900Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 args=[.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4]
+2024-01-05T01:28:07.903Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 pid=42716
+2024-01-05T01:28:07.903Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4
+2024-01-05T01:28:07.975Z [INFO]  provider.terraform-provider-kubectl_v2.0.4: configuring server automatic mTLS: timestamp=2024-01-05T01:28:07.975Z
+2024-01-05T01:28:07.984Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:07.984Z [DEBUG] provider.terraform-provider-kubectl_v2.0.4: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3237798249 network=unix timestamp=2024-01-05T01:28:07.984Z
+2024-01-05T01:28:07.991Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:07.991Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:07.995Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5]
+2024-01-05T01:28:07.998Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 pid=42718
+2024-01-05T01:28:07.998Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5
+2024-01-05T01:28:08.057Z [INFO]  provider.terraform-provider-helm_v2.12.1_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:08.057Z
+2024-01-05T01:28:08.066Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:08.066Z [DEBUG] provider.terraform-provider-helm_v2.12.1_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3377646868 network=unix timestamp=2024-01-05T01:28:08.066Z
+2024-01-05T01:28:08.073Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:08.074Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 pid=42711
+2024-01-05T01:28:08.074Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:08.087Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:08.088Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 pid=42715
+2024-01-05T01:28:08.088Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:08.131Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:08.132Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 pid=42716
+2024-01-05T01:28:08.132Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:08.133Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:08.134Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 pid=42713
+2024-01-05T01:28:08.134Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Metadata: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server_getproviderschema.go:39 timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Metadata: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server_getproviderschema.go:41 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Schema: tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:275 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Schema: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:277 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Resources: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:352 @module=sdk.framework timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Resources: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:354 @module=sdk.framework timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider DataSources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:155 timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider DataSources: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:157 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e tf_rpc=GetProviderSchema timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined DataSource Schema: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:239 @module=sdk.framework tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined DataSource Schema: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:241 tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http @module=sdk.framework tf_req_id=0a15c041-7d6d-1210-06fb-bd83dc27872e tf_rpc=GetProviderSchema timestamp=2024-01-05T01:28:08.135Z
+2024-01-05T01:28:08.135Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:08.136Z [DEBUG] No provider meta schema returned
+2024-01-05T01:28:08.136Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 pid=42718
+2024-01-05T01:28:08.136Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined validator.String: tf_rpc=ValidateDataSourceConfig tf_attribute_path=ca_cert_pem tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:707 @module=sdk.framework description="Ensure that if an attribute is set, these are not set: "[insecure]"" tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined validator.String: @module=sdk.framework tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:717 description="Ensure that if an attribute is set, these are not set: "[insecure]"" tf_attribute_path=ca_cert_pem tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined validator.String: @module=sdk.framework tf_attribute_path=method tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:707 description="value must be one of: ["\"GET\"" "\"POST\"" "\"HEAD\""]" tf_data_source_type=http tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined validator.String: tf_rpc=ValidateDataSourceConfig @module=sdk.framework description="value must be one of: ["\"GET\"" "\"POST\"" "\"HEAD\""]" tf_attribute_path=method tf_data_source_type=http @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:717 tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Type Validate: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:81 @module=sdk.framework tf_attribute_path=request_headers tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Type Validate: tf_provider_addr=registry.terraform.io/hashicorp/http @module=sdk.framework tf_data_source_type=http tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:83 tf_attribute_path=request_headers tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Type Validate: tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:81 @module=sdk.framework tf_attribute_path=response_headers tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Type Validate: tf_attribute_path=response_headers tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig @module=sdk.framework @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:83 timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Type Validate: tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:81 tf_attribute_path=request_timeout_ms @module=sdk.framework tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Type Validate: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:83 @module=sdk.framework tf_attribute_path=request_timeout_ms tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined validator.Int64: tf_provider_addr=registry.terraform.io/hashicorp/http @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:317 tf_attribute_path=request_timeout_ms tf_data_source_type=http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig @module=sdk.framework description="value must be at least 1" timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined validator.Int64: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:327 description="value must be at least 1" tf_attribute_path=request_timeout_ms tf_data_source_type=http @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Type Validate: tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_attribute_path=status_code tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:81 @module=sdk.framework timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.136Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Type Validate: @module=sdk.framework tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:83 tf_attribute_path=status_code timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Type Validate: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:81 tf_attribute_path=retry.attempts tf_provider_addr=registry.terraform.io/hashicorp/http @module=sdk.framework tf_data_source_type=http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Type Validate: tf_provider_addr=registry.terraform.io/hashicorp/http @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:83 @module=sdk.framework tf_attribute_path=retry.attempts tf_data_source_type=http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined validator.Int64: tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 description="value must be at least 0" tf_provider_addr=registry.terraform.io/hashicorp/http @module=sdk.framework tf_attribute_path=retry.attempts tf_data_source_type=http tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:317 timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined validator.Int64: tf_rpc=ValidateDataSourceConfig tf_attribute_path=retry.attempts tf_provider_addr=registry.terraform.io/hashicorp/http description="value must be at least 0" tf_data_source_type=http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:327 @module=sdk.framework timestamp=2024-01-05T01:28:08.136Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Type Validate: tf_provider_addr=registry.terraform.io/hashicorp/http @module=sdk.framework tf_attribute_path=retry.min_delay_ms tf_data_source_type=http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:81 timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Type Validate: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 @module=sdk.framework tf_attribute_path=retry.min_delay_ms @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:83 tf_data_source_type=http tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined validator.Int64: tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:317 @module=sdk.framework tf_attribute_path=retry.min_delay_ms description="value must be at least 0" timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined validator.Int64: description="value must be at least 0" tf_data_source_type=http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:327 tf_provider_addr=registry.terraform.io/hashicorp/http tf_rpc=ValidateDataSourceConfig @module=sdk.framework tf_attribute_path=retry.min_delay_ms timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Type Validate: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:81 tf_attribute_path=retry.max_delay_ms tf_data_source_type=http tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Type Validate: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwschemadata/data_value.go:83 tf_provider_addr=registry.terraform.io/hashicorp/http tf_rpc=ValidateDataSourceConfig @module=sdk.framework tf_attribute_path=retry.max_delay_ms tf_data_source_type=http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined validator.Int64: @module=sdk.framework tf_attribute_path=retry.max_delay_ms tf_provider_addr=registry.terraform.io/hashicorp/http tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:317 description="value must be at least 0" tf_data_source_type=http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined validator.Int64: @module=sdk.framework description="value must be at least 0" tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:327 tf_attribute_path=retry.max_delay_ms timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined validator.Int64: tf_rpc=ValidateDataSourceConfig @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:317 @module=sdk.framework tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http description="value must be at least sum of <.min_delay_ms" tf_attribute_path=retry.max_delay_ms timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined validator.Int64: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/attribute_validation.go:327 @module=sdk.framework description="value must be at least sum of <.min_delay_ms" tf_data_source_type=http tf_attribute_path=retry.max_delay_ms tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=1d45e67b-77c6-4e80-aee7-945b07245b21 tf_rpc=ValidateDataSourceConfig timestamp=2024-01-05T01:28:08.137Z
+2024-01-05T01:28:08.137Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:08.138Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 pid=42712
+2024-01-05T01:28:08.138Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:08.138Z [INFO]  backend/local: apply calling Plan
+2024-01-05T01:28:08.138Z [DEBUG] Building and walking plan graph for NormalMode
+2024-01-05T01:28:08.138Z [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/http"], implied first by data.http.ddns (expand)
+2024-01-05T01:28:08.138Z [DEBUG] ProviderTransformer: "kubectl_manifest.cluster_issuer_staging (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/alekc/kubectl"]
+2024-01-05T01:28:08.138Z [DEBUG] ProviderTransformer: "data.linode_lke_cluster.lke_cluster (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/linode/linode"]
+2024-01-05T01:28:08.138Z [DEBUG] ProviderTransformer: "helm_release.metrics-server (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/helm"]
+2024-01-05T01:28:08.138Z [DEBUG] ProviderTransformer: "kubectl_manifest.cluster_issuer_production (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/alekc/kubectl"]
+2024-01-05T01:28:08.138Z [DEBUG] ProviderTransformer: "random_password.wordpressPassword (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2024-01-05T01:28:08.138Z [DEBUG] ProviderTransformer: "kubernetes_namespace.metrics-server (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:08.138Z [DEBUG] ProviderTransformer: "helm_release.ingress-nginx (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/helm"]
+2024-01-05T01:28:08.138Z [DEBUG] ProviderTransformer: "kubernetes_namespace.cert_manager (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:08.139Z [DEBUG] ProviderTransformer: "kubernetes_namespace.wordpress (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:08.139Z [DEBUG] ProviderTransformer: "data.http.ddns (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/http"]
+2024-01-05T01:28:08.139Z [DEBUG] ProviderTransformer: "kubernetes_secret.letsencrypt_linode_api_token_secret (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:08.139Z [DEBUG] ProviderTransformer: "helm_release.wordpress (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/helm"]
+2024-01-05T01:28:08.139Z [DEBUG] ProviderTransformer: "data.kubernetes_service.nginx (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2024-01-05T01:28:08.139Z [DEBUG] ProviderTransformer: "helm_release.cert_manager (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/helm"]
+2024-01-05T01:28:08.139Z [DEBUG] ProviderTransformer: "data.linode_profile.me (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/linode/linode"]
+2024-01-05T01:28:08.139Z [DEBUG] pruning unused provider["registry.terraform.io/linode/linode"].default
+2024-01-05T01:28:08.139Z [DEBUG] pruning unused provider["registry.terraform.io/alekc/kubectl"].default
+2024-01-05T01:28:08.139Z [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/kubernetes"].default
+2024-01-05T01:28:08.139Z [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/helm"].default
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "random_password.wordpressPassword (expand)" references: []
+2024-01-05T01:28:08.139Z [INFO]  ReferenceTransformer: reference not found: "path.module"
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "helm_release.wordpress (expand)" references: [helm_release.ingress-nginx (expand) helm_release.metrics-server (expand) helm_release.cert_manager (expand) kubernetes_namespace.wordpress (expand) kubernetes_namespace.wordpress (expand) data.linode_profile.me (expand) var.dns var.production data.linode_profile.me (expand) data.linode_profile.me (expand) random_password.wordpressPassword (expand) data.linode_profile.me (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "var.production" references: []
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "local.kube_config_decoded (expand)" references: [data.linode_lke_cluster.lke_cluster (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "kubectl_manifest.cluster_issuer_staging (expand)" references: [helm_release.cert_manager (expand) var.linode_config]
+2024-01-05T01:28:08.139Z [INFO]  ReferenceTransformer: reference not found: "path.module"
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "helm_release.ingress-nginx (expand)" references: [helm_release.cert_manager (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "data.linode_profile.me (expand)" references: []
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "local.depends_on (expand)" references: [data.linode_lke_cluster.lke_cluster (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "output.wordpressPassword (expand)" references: [random_password.wordpressPassword (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" references: []
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/linode/linode\"]" references: []
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "kubernetes_namespace.wordpress (expand)" references: [data.linode_lke_cluster.lke_cluster (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "kubernetes_namespace.cert_manager (expand)" references: [data.linode_lke_cluster.lke_cluster (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "data.linode_lke_cluster.lke_cluster (expand)" references: [var.lke_cluster_id]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "var.dns" references: []
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "local.hashed_data (expand)" references: [local.combined_data (expand) var.linode_config]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "local.user_token (expand)" references: [local.kube_config_map (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "output.wordpressURL (expand)" references: [var.dns data.linode_profile.me (expand) var.dns]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "output.wordpressUsername (expand)" references: [data.linode_profile.me (expand)]
+2024-01-05T01:28:08.139Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/alekc/kubectl\"]" references: []
+2024-01-05T01:28:08.140Z [INFO]  ReferenceTransformer: reference not found: "path.module"
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "helm_release.metrics-server (expand)" references: [kubernetes_namespace.metrics-server (expand) kubernetes_namespace.metrics-server (expand)]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "kubernetes_namespace.metrics-server (expand)" references: [data.linode_lke_cluster.lke_cluster (expand)]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "data.kubernetes_service.nginx (expand)" references: [helm_release.ingress-nginx (expand) helm_release.ingress-nginx (expand) helm_release.ingress-nginx (expand)]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/http\"]" references: []
+2024-01-05T01:28:08.140Z [INFO]  ReferenceTransformer: reference not found: "path.module"
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "helm_release.cert_manager (expand)" references: [kubernetes_namespace.cert_manager (expand) kubernetes_namespace.cert_manager (expand)]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "data.http.ddns (expand)" references: [data.kubernetes_service.nginx (expand) data.linode_profile.me (expand) data.kubernetes_service.nginx (expand) local.hashed_data (expand) var.dns var.dns]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "local.combined_data (expand)" references: [data.linode_profile.me (expand) data.kubernetes_service.nginx (expand)]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "local.user_name (expand)" references: [local.kube_config_map (expand)]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "output.wordpressAdmin (expand)" references: [var.dns data.linode_profile.me (expand) var.dns]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/helm\"]" references: []
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "kubernetes_secret.letsencrypt_linode_api_token_secret (expand)" references: [kubernetes_namespace.cert_manager (expand) var.linode_config kubernetes_namespace.cert_manager (expand)]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "kubectl_manifest.cluster_issuer_production (expand)" references: [helm_release.cert_manager (expand) var.linode_config]
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "var.linode_config" references: []
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "var.lke_cluster_id" references: []
+2024-01-05T01:28:08.140Z [DEBUG] ReferenceTransformer: "local.kube_config_map (expand)" references: [local.kube_config_decoded (expand)]
+2024-01-05T01:28:08.141Z [DEBUG] Starting graph walk: walkPlan
+2024-01-05T01:28:08.142Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:08.142Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:08.145Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5]
+2024-01-05T01:28:08.148Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 pid=42719
+2024-01-05T01:28:08.148Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5
+2024-01-05T01:28:08.227Z [INFO]  provider.terraform-provider-kubernetes_v2.24.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:08.227Z
+2024-01-05T01:28:08.237Z [DEBUG] provider.terraform-provider-kubernetes_v2.24.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3624103570 network=unix timestamp=2024-01-05T01:28:08.237Z
+2024-01-05T01:28:08.237Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:08.243Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:08.243Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:08.247Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5]
+2024-01-05T01:28:08.250Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 pid=42721
+2024-01-05T01:28:08.251Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5
+2024-01-05T01:28:08.289Z [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" changed the config value, but that value is unused
+2024-01-05T01:28:08.312Z [INFO]  provider.terraform-provider-helm_v2.12.1_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:08.312Z
+2024-01-05T01:28:08.322Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:08.322Z [DEBUG] provider.terraform-provider-helm_v2.12.1_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3976876440 network=unix timestamp=2024-01-05T01:28:08.321Z
+2024-01-05T01:28:08.328Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:08.328Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:08.330Z [DEBUG] provider.terraform-provider-kubernetes_v2.24.0_x5: 2024/01/05 01:28:08 [WARN] Invalid provider configuration was supplied. Provider operations likely to fail: invalid configuration: no configuration has been provided, try setting KUBERNETES_MASTER environment variable
+2024-01-05T01:28:08.330Z [DEBUG] provider.terraform-provider-kubernetes_v2.24.0_x5: 2024/01/05 01:28:08 [DEBUG] Enabling HTTP requests/responses tracing
+2024-01-05T01:28:08.331Z [DEBUG] provider.terraform-provider-kubernetes_v2.24.0_x5: 2024-01-05T01:28:08.330Z [ERROR] [Configure]: Failed to load config:="&{0x14000b68a00 0x140001ca500 <nil> 0x140016b60c0 {0 0} 0x140010d0590}"
+2024-01-05T01:28:08.332Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 args=[.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1]
+2024-01-05T01:28:08.335Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 pid=42723
+2024-01-05T01:28:08.335Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1
+2024-01-05T01:28:08.382Z [INFO]  provider.terraform-provider-linode_v2.10.1: configuring server automatic mTLS: timestamp=2024-01-05T01:28:08.382Z
+2024-01-05T01:28:08.390Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:08.390Z [DEBUG] provider.terraform-provider-linode_v2.10.1: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin991374463 network=unix timestamp=2024-01-05T01:28:08.389Z
+2024-01-05T01:28:08.396Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:08.396Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:08.400Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 args=[.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4]
+2024-01-05T01:28:08.403Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 pid=42724
+2024-01-05T01:28:08.404Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4
+2024-01-05T01:28:08.465Z [INFO]  provider.terraform-provider-kubectl_v2.0.4: configuring server automatic mTLS: timestamp=2024-01-05T01:28:08.464Z
+2024-01-05T01:28:08.474Z [DEBUG] provider.terraform-provider-kubectl_v2.0.4: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin3181564646 network=unix timestamp=2024-01-05T01:28:08.474Z
+2024-01-05T01:28:08.474Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:08.481Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:08.481Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:08.483Z [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/alekc/kubectl\"]" changed the config value, but that value is unused
+2024-01-05T01:28:08.485Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5]
+2024-01-05T01:28:08.487Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 pid=42725
+2024-01-05T01:28:08.487Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5
+2024-01-05T01:28:08.519Z [INFO]  provider.terraform-provider-random_v3.6.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:08.518Z
+2024-01-05T01:28:08.526Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:08.526Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin1713858462 network=unix timestamp=2024-01-05T01:28:08.526Z
+2024-01-05T01:28:08.532Z [DEBUG] created provider logger: level=debug
+2024-01-05T01:28:08.532Z [INFO]  provider: configuring client automatic mTLS
+2024-01-05T01:28:08.533Z [DEBUG] No provider meta schema returned
+2024-01-05T01:28:08.535Z [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/helm\"]" changed the config value, but that value is unused
+2024-01-05T01:28:08.536Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5]
+2024-01-05T01:28:08.538Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 pid=42726
+2024-01-05T01:28:08.538Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5
+2024-01-05T01:28:08.571Z [INFO]  provider.terraform-provider-http_v3.4.0_x5: configuring server automatic mTLS: timestamp=2024-01-05T01:28:08.571Z
+2024-01-05T01:28:08.585Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: plugin address: address=/var/folders/c2/f9f_yyt56h75b32z8m1kp0580000gq/T/plugin2352312133 network=unix timestamp=2024-01-05T01:28:08.585Z
+2024-01-05T01:28:08.585Z [DEBUG] provider: using plugin: version=5
+2024-01-05T01:28:08.593Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Metadata: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server_getproviderschema.go:39 timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.593Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Metadata: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server_getproviderschema.go:41 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.593Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Schema: tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:275 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.593Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Schema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:277 timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.594Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Resources: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:352 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.594Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Resources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:354 timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.594Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider DataSources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:155 timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.594Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider DataSources: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:157 @module=sdk.framework timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.594Z [INFO]  provider.terraform-provider-kubectl_v2.0.4: 2024/01/05 01:28:08 [DEBUG] Using kubeconfig: /Users/jobradsh/.kube/config: timestamp=2024-01-05T01:28:08.594Z
+2024-01-05T01:28:08.594Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined DataSource Schema: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:239 tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 tf_rpc=GetProviderSchema @module=sdk.framework tf_data_source_type=http timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.594Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined DataSource Schema: @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server.go:241 @module=sdk.framework tf_rpc=GetProviderSchema tf_req_id=7531854c-b170-9873-29d4-1f4613d0d6f9 tf_data_source_type=http tf_provider_addr=registry.terraform.io/hashicorp/http timestamp=2024-01-05T01:28:08.593Z
+2024-01-05T01:28:08.594Z [DEBUG] No provider meta schema returned
+2024-01-05T01:28:08.594Z [INFO]  provider.terraform-provider-helm_v2.12.1_x5: 2024/01/05 01:28:08 [DEBUG] Experiments enabled: []: timestamp=2024-01-05T01:28:08.594Z
+2024-01-05T01:28:08.594Z [DEBUG] Resource instance state not found for node "random_password.wordpressPassword", instance random_password.wordpressPassword
+2024-01-05T01:28:08.594Z [DEBUG] ReferenceTransformer: "random_password.wordpressPassword" references: []
+2024-01-05T01:28:08.594Z [DEBUG] refresh: random_password.wordpressPassword: no state, so not refreshing
+2024-01-05T01:28:08.595Z [INFO]  provider.terraform-provider-linode_v2.10.1: Linode config does not exist, skipping..: @caller=github.com/linode/terraform-provider-linode/v2/linode/framework_provider_config.go:246 tf_req_id=d5f5da64-6d50-beb8-e0de-825ed8d48d38 tf_rpc=ConfigureProvider @module=linode tf_mux_provider=*proto5server.Server tf_provider_addr=registry.terraform.io/linode/linode timestamp=2024-01-05T01:28:08.594Z
+2024-01-05T01:28:08.595Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Calling provider defined Provider Configure: tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=5b86ab8a-582b-8b9d-6495-0f7e3fe02e48 tf_rpc=Configure @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server_configureprovider.go:15 @module=sdk.framework timestamp=2024-01-05T01:28:08.595Z
+2024-01-05T01:28:08.595Z [DEBUG] provider.terraform-provider-http_v3.4.0_x5: Called provider defined Provider Configure: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/http tf_req_id=5b86ab8a-582b-8b9d-6495-0f7e3fe02e48 tf_rpc=Configure @caller=github.com/hashicorp/terraform-plugin-framework@v1.3.1/internal/fwserver/server_configureprovider.go:23 timestamp=2024-01-05T01:28:08.595Z
+2024-01-05T01:28:08.595Z [INFO]  provider.terraform-provider-linode_v2.10.1: Linode config does not exist, skipping..: tf_mux_provider=*schema.GRPCProviderServer tf_provider_addr=registry.terraform.io/linode/linode tf_req_id=d5f5da64-6d50-beb8-e0de-825ed8d48d38 tf_rpc=ConfigureProvider @caller=github.com/linode/terraform-provider-linode/v2/linode/helper/config.go:82 @module=linode timestamp=2024-01-05T01:28:08.595Z
+2024-01-05T01:28:08.598Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @module=sdk.framework tf_resource_type=random_password tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=02682b38-3a55-7799-42a5-bbd78501bf49 tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.4.2/internal/fwserver/server_planresourcechange.go:195 timestamp=2024-01-05T01:28:08.598Z
+2024-01-05T01:28:08.598Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_attribute_path=AttributeName("id") tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=02682b38-3a55-7799-42a5-bbd78501bf49 tf_resource_type=random_password @caller=github.com/hashicorp/terraform-plugin-framework@v1.4.2/internal/fwserver/server_planresourcechange.go:399 tf_rpc=PlanResourceChange timestamp=2024-01-05T01:28:08.598Z
+2024-01-05T01:28:08.598Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: marking computed attribute that is null in the config as unknown: tf_req_id=02682b38-3a55-7799-42a5-bbd78501bf49 tf_resource_type=random_password tf_rpc=PlanResourceChange tf_attribute_path=AttributeName("number") tf_provider_addr=registry.terraform.io/hashicorp/random @caller=github.com/hashicorp/terraform-plugin-framework@v1.4.2/internal/fwserver/server_planresourcechange.go:399 @module=sdk.framework timestamp=2024-01-05T01:28:08.598Z
+2024-01-05T01:28:08.598Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_rpc=PlanResourceChange tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=02682b38-3a55-7799-42a5-bbd78501bf49 tf_resource_type=random_password @caller=github.com/hashicorp/terraform-plugin-framework@v1.4.2/internal/fwserver/server_planresourcechange.go:399 tf_attribute_path=AttributeName("result") timestamp=2024-01-05T01:28:08.598Z
+2024-01-05T01:28:08.598Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_resource_type=random_password tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=02682b38-3a55-7799-42a5-bbd78501bf49 tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.4.2/internal/fwserver/server_planresourcechange.go:399 tf_attribute_path=AttributeName("numeric") timestamp=2024-01-05T01:28:08.598Z
+2024-01-05T01:28:08.598Z [DEBUG] provider.terraform-provider-random_v3.6.0_x5: marking computed attribute that is null in the config as unknown: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=02682b38-3a55-7799-42a5-bbd78501bf49 tf_rpc=PlanResourceChange tf_resource_type=random_password @caller=github.com/hashicorp/terraform-plugin-framework@v1.4.2/internal/fwserver/server_planresourcechange.go:399 @module=sdk.framework tf_attribute_path=AttributeName("bcrypt_hash") timestamp=2024-01-05T01:28:08.598Z
+2024-01-05T01:28:08.600Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:08.601Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5 pid=42725
+2024-01-05T01:28:08.601Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:08.977Z [DEBUG] Resource instance state not found for node "data.linode_profile.me", instance data.linode_profile.me
+2024-01-05T01:28:08.977Z [DEBUG] ReferenceTransformer: "data.linode_profile.me" references: []
+2024-01-05T01:28:08.977Z [DEBUG] Resource instance state not found for node "data.linode_lke_cluster.lke_cluster", instance data.linode_lke_cluster.lke_cluster
+2024-01-05T01:28:08.978Z [INFO]  ReferenceTransformer: reference not found: "var.lke_cluster_id"
+2024-01-05T01:28:08.978Z [DEBUG] ReferenceTransformer: "data.linode_lke_cluster.lke_cluster" references: []
+2024-01-05T01:28:09.123Z [ERROR] provider.terraform-provider-linode_v2.10.1: Response contains error diagnostic: diagnostic_severity=ERROR diagnostic_summary="Unable to get profile" tf_req_id=ed18421d-5c34-49b4-fdfb-49098afd650d @module=sdk.proto tf_rpc=ReadDataSource tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/linode/linode diagnostic_detail="[401] Invalid Token" tf_data_source_type=linode_profile @caller=github.com/hashicorp/terraform-plugin-go@v0.19.1/tfprotov5/internal/diag/diagnostics.go:58 timestamp=2024-01-05T01:28:09.123Z
+2024-01-05T01:28:09.124Z [ERROR] vertex "data.linode_profile.me" error: Unable to get profile
+2024-01-05T01:28:09.124Z [ERROR] vertex "data.linode_profile.me (expand)" error: Unable to get profile
+2024-01-05T01:28:09.161Z [ERROR] provider.terraform-provider-linode_v2.10.1: Response contains error diagnostic: tf_req_id=2dba8fd5-b708-83b1-5ea5-adb80e658fad tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/linode/linode @module=sdk.proto diagnostic_detail= diagnostic_summary="failed to get LKE cluster 149239: [401] Invalid Token" tf_data_source_type=linode_lke_cluster diagnostic_severity=ERROR tf_rpc=ReadDataSource @caller=github.com/hashicorp/terraform-plugin-go@v0.19.1/tfprotov5/internal/diag/diagnostics.go:58 timestamp=2024-01-05T01:28:09.161Z
+2024-01-05T01:28:09.162Z [ERROR] vertex "data.linode_lke_cluster.lke_cluster" error: failed to get LKE cluster 149239: [401] Invalid Token
+2024-01-05T01:28:09.162Z [ERROR] vertex "data.linode_lke_cluster.lke_cluster (expand)" error: failed to get LKE cluster 149239: [401] Invalid Token
+2024-01-05T01:28:09.180Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:09.180Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:09.180Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:09.180Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:09.181Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-01-05T01:28:09.181Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/http/3.4.0/darwin_arm64/terraform-provider-http_v3.4.0_x5 pid=42726
+2024-01-05T01:28:09.181Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:09.182Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.24.0/darwin_arm64/terraform-provider-kubernetes_v2.24.0_x5 pid=42719
+2024-01-05T01:28:09.182Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:09.182Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/helm/2.12.1/darwin_arm64/terraform-provider-helm_v2.12.1_x5 pid=42721
+2024-01-05T01:28:09.182Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:09.182Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/alekc/kubectl/2.0.4/darwin_arm64/terraform-provider-kubectl_v2.0.4 pid=42724
+2024-01-05T01:28:09.182Z [DEBUG] provider: plugin exited
+2024-01-05T01:28:09.183Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/linode/linode/2.10.1/darwin_arm64/terraform-provider-linode_v2.10.1 pid=42723
+2024-01-05T01:28:09.183Z [DEBUG] provider: plugin exited

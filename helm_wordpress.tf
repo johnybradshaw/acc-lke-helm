@@ -11,6 +11,14 @@ resource "kubernetes_namespace" "wordpress" {
     }
 }
 
+# Create a random user for Wordpress
+resource "random_string" "wordpressUsername" {
+  length            = 8
+  special           = false
+  upper             = false
+  numeric           = false
+}
+
 # Create a random password for Wordpress
 resource "random_password" "wordpressPassword" {
   length           = 24
@@ -52,10 +60,10 @@ resource "helm_release" "wordpress" {
         name  = "ingress.enabled"
         value = "true"
     }
-    # Set the hostname for the ingress
+    # Set the hostname for the ingress (Previously ${data.linode_profile.me.username})
     set {
         name  = "ingress.hostname"
-        value = "${data.linode_profile.me.username}.${var.dns.ddns}"
+        value = "${local.subdomain}.${var.dns.ddns}"
     }
     # Enable TLS on the ingress
     set {
@@ -83,7 +91,7 @@ resource "helm_release" "wordpress" {
     }
     set {
         name = "wordpressUsername"
-        value = data.linode_profile.me.username # Use the current user's username
+        value = random_string.wordpressUsername.result # Generate a random username
     }
     set {
         name = "wordpressPassword"
@@ -91,6 +99,6 @@ resource "helm_release" "wordpress" {
     }
     set {
         name = "wordpressBlogName"
-        value = "${data.linode_profile.me.username}'s Really Cool Blog"
+        value = "${local.blogname}'s Really Cool Blog"
     }
 }

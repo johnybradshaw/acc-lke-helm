@@ -14,9 +14,9 @@ variable "lke_cluster_id" {
 }
 
 variable "dns" {
-    description = "DNS variables"
+    description = "DDNS variables"
     type = object({
-      ddns = string # Domain name to update
+      ddns = string # DDNS to update
       ddns_secure = bool # Whether to use HTTPS for the DDNS update
     })
 }
@@ -25,4 +25,14 @@ variable "production" {
   description = "Use production certificates (true) or staging certificates (false)"
   type = bool
   default = false
+}
+
+variable "subdomain" {
+  description = "Subdomain for the Wordpress site"
+  type = string
+
+  validation {
+    condition     = can(regex("^[a-zA-Z]+$", var.subdomain))
+    error_message = "The subdomain must only contain letters."
+  }
 }
