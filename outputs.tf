@@ -7,7 +7,7 @@ output "wordpressAdmin" {
     description = "Wordpress Admin URL"
 }
 output "wordpressUsername" {
-    value = random_string.wordpressUsername
+    value = random_string.wordpressUsername.result
     description = "Wordpress Username"
 }
 output "wordpressPassword" {
