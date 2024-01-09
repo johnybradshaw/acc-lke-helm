@@ -7,7 +7,7 @@ output "wordpressAdmin" {
     description = "Wordpress Admin URL"
 }
 output "wordpressUsername" {
-    value = data.linode_profile.me.username
+    value = random_string.wordpressUsername
     description = "Wordpress Username"
 }
 output "wordpressPassword" {
