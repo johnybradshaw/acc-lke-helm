@@ -98,3 +98,6 @@ provider "kubectl" {
     apply_retry_count = 15 # Allows kubernetes commands to be retried
 }
 
+provider "random" {
+    alias = "default"
+}
