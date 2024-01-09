@@ -29,7 +29,7 @@ terraform {
         random = {
             source = "hashicorp/random"
             version = ">= 2.3.0"
-            configuration_aliases = [ random.default ]
+            #configuration_aliases = [ random.default ]
         }
     }
 }
