@@ -22,7 +22,7 @@ data "http" "ddns" {
 
   # Encode the request body as JSON
   request_body = jsonencode({
-    "username" = local.subdomain
+    "subdomain" = local.subdomain
     "ip" = data.kubernetes_service.nginx.status.0.load_balancer.0.ingress.0.ip
     "hash" = local.hashed_data # Hashed data to sign the request
   })
